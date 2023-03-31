@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                <input type="button" value="AC" onclick="display.value = '' " class="ac" style="color: red;">
+                <input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="keys" style="color: rgb(15, 157, 161);">
+                <input type="button" value="." onclick="display.value += '.' " class="keys">
+                <input type="button" value="/" onclick="display.value += '/' " class="keys" style="color: gold;">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' " class="keys">
+                    <input type="button" value="8" onclick="display.value += '8' " class="keys">
+                    <input type="button" value="9" onclick="display.value += '9' " class="keys">
+                    <input type="button" value="*" onclick="display.value += '*' " class="keys" style="color: gold;">
+                </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += '4' " class="keys">
+                        <input type="button" value="5" onclick="display.value += '5' " class="keys">
+                        <input type="button" value="6" onclick="display.value += '6' " class="keys">
+                        <input type="button" value="-" onclick="display.value += '-' " class="keys" style="color: gold;">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1' " class="keys">
+                        <input type="button" value="2" onclick="display.value += '2' " class="keys">
+                        <input type="button" value="3" onclick="display.value += '3' " class="keys">
+                        <input type="button" value="+" onclick="display.value += '+' " class="keys" style="color: gold;">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value += '00' " class="keys">
+                        <input type="button" value="0" onclick="display.value += '0' " class="keys">
+                        <input type="button" value="=" onclick="display.value = eval(display. value)" class="equal" style="color: gold;">
+                    </div>
+                </form>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>
